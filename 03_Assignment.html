@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module (HTML5) 3 </title>
+</head>
+
+<body>
+    <!-- modules-3 -->
+    <!-- First Questions -->
+    <div>
+        <h1>What are the new tags added in HTML5? </h1>
+        Tags (Elements) Description
+        <li>article : Represents an independent piece of content of a document, such as a blog entry or newspaper
+            article
+        </li>
+        <li>aside : Represents a piece of content that is only slightly related to the rest of the page.</li>
+        <li>audio : Defines an audio file.</li>
+        <li>canvas : This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.</li>
+        <li>command : Represents a command the user can invoke.</li>
+        <li>datalist : Together with the a new list attribute for input can be used to make comboboxes</li>
+        <li>details : Represents additional information or controls which the user can obtain on demand</li>
+        <li>embed : Defines external interactive content or plugin.</li>
+        <li>figure : Represents a piece of self-contained flow content, typically referenced as a single unit from the
+            main
+            flow of the document.</li>
+        <li>footer : Represents a footer for a section and can contain information about the author, copyright
+            information,
+            et cetera.</li>
+        <li>header : Represents a group of introductory or navigational aids.</li>
+        <li>hgroup : Represents the header of a section.</li>
+        <li>keygen : Represents control for key pair generation.</li>
+        <li>mark : Represents a run of text in one document marked or highlighted for reference purposes, due to its
+            relevance in another context.</li>
+        <li>meter : Represents a measurement, such as disk usage.</li>
+        <li>nav : Represents a section of the document intended for navigation.</li>
+        <li>output : Represents some type of output, such as from a calculation done through scripting.</li>
+        <li>progress : Represents a completion of a task, such as downloading or when performing a series of expensive
+            operations.</li>
+        <li>ruby : Together with rt tag and rp tag allow for marking up ruby annotations.</li>
+        <li>section : Represents a generic document or application section</li>
+        <li>time : Represents a date and/or time.</li>
+        <li>video : Defines a video file.</li>
+        <li>wbr : Represents a line break opportunity.</li>
+    </div>
+
+    <pre>
+    New types for input tag
+    The input element's type attribute now has the following new values:
+
+    Type              Description
+    color           : Color selector, which could be represented by a wheel or swatch picker
+    date            : Selector for calendar date
+    datetime-local  : Date and time display, with no setting or indication for time zones
+    datetime        : Full date and time display, including a time zone.
+    email           : Input type should be an email.
+    month           : Selector for a month within a given year
+    number          : A field containing a numeric value only
+    range           : Numeric selector within a range of values, typically visualized as a slider
+    search          : Term to supply to a search engine. For example, the search bar atop a browser.
+    tel             : Input type should be telephone number.
+    time            : Time indicator and selector, with no time zone information
+    url             : Input type should be URL type.
+    week            : Selector for a week within a given year
+    </pre>
+
+    <!-- second Questions -->
+    <h1>How to embed audio and video in a webpage?</h1>
+    <p>HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. It is a
+        combination of Hypertext and Markup language. HTML uses predefined tags and elements that tell the browser how
+        to properly display the content on the screen. So, in this article, we will learn how to embed audio and video
+        in HTML. In order to insert multimedia files on web pages, we already know how to insert images in HTML. </p>
+    <code>
+    <audio>
+        <source src="file_name" type="audio_file_type">
+    </audio>
+    </code>
+    <pre>
+        Attribute          Value            Description
+        autoplay          autoplay          When the page is loaded. It specifies to play audio as soon as possible. 
+        controls          controls          It displays audio control. 
+        loop               loop             It will start the audio again when it is finished. 
+        muted              muted            When the page is loaded audio will be automatically muted. 
+        preload     auto/metadata/none      It specifies how the author thinks the audio will be loaded when the page is ready. 
+        src                 URL             It specifies the URL of the audio file. 
+
+    </pre>
+    <p>video tag</p>
+    <pre>
+        The HTML video element is used to show a video on a web page.
+        The controls attribute adds video controls, like play, pause, and volume.
+        It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+        The source element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+        The text between the video tag and video tags will only be displayed in browsers that do not support the video element.
+    </pre>
+    <!-- video tag -->
+    <video height="" width="">
+        <source src="video link path" type="video file 3mp ">
+    </video>
+
+    <!-- three Questions -->
+    <h1>Semantic element in HTML5?</h1>
+    <p>A semantic element clearly describes its meaning to both the browser and the developer.
+        Examples of non-semantic elements: div and span tags - Tells nothing about its content.
+        Examples of semantic elements: form, table, and article tags - Clearly defines its content.</p>
+    <p>Many web sites contain HTML code like: div id ,div class and div id="footer" to indicate navigation, header, and
+        footer.
+        In HTML there are some semantic elements that can be used to define different parts of a web page: </p>
+
+    <p>article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time, tags </p>
+
+    <!-- four Questions -->
+    <h1>Canvas and SVG tags</h1>
+    <p>Scalable Vector Graphics
+        <br> SVG defines vector-based graphics in XML, which can be directly embedded in HTML pages.
+        <br> SVG graphics are scalable, and do not lose any quality if they are zoomed or resized
+    </p>
+    <ul>
+        <li>SVG stands for Scalable Vector Graphics</li>
+        <li>SVG is used to define vector-based graphics for the Web</li>
+        <li>SVG defines graphics in XML format</li>
+        <li>Each element and attribute in SVG files can be animated</li>
+        <li>SVG is a W3C recommendation</li>
+        <li>SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript</li>
+    </ul>
+    <p>The svg Element
+       <br> The HTML svg element is a container for SVG graphics.
+       <br> SVG has several methods for drawing paths, rectangles, circles, polygons, text, and much more.
+        </p>
+    <!-- svg tags example  -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+      </svg>
+      
+
+</html>
